@@ -30,8 +30,7 @@ $ docker rmi [image_id]
 
 
 * memo
- - 日が変わってdocker-compose upしてもrubyが落ちてこない。
-    - 毎日作り直さないとダメなのか？(めんどくさいなそれ)
-      - my/rails5.2、mysql、ruby、railsのイメージを削除して再度my/rails5.2を作り直し(Dockerの再起動も含む)
-    - Dockerの再起動だけでイケる？（明日確認する）
+ - 環境依存かもしれないが、イメージを作った後、コンテナ起動がうまくいかないことがある。
+   - だいたいはDocker for Windowsを再起動すれば治る。
+   - 治らない場合は、my/rails5.2、mysql、ruby、railsのイメージを削除して再度my/rails5.2を作り直し(Dockerの再起動も含む)
     
